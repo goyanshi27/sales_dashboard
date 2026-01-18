@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Analytics Pro | Real-time Insights</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <header class="header">
+            <div class="header-left">
+                <h1>Sales Analytics Pro</h1>
+                <p class="subtitle">Real-time Performance Insights</p>
+            </div>
+            <div class="header-right">
+                <div class="status-indicator">
+                    <span class="dot"></span>
+                    Connected to Live Data
+                </div>
+            </div>
+        </header>
+
+        <section class="kpi-section">
+            <div class="kpi-card">
+                <span class="kpi-label">TOTAL SALES</span>
+                <span class="kpi-value">₹14,51,56,854</span>
+            </div>
+            <div class="kpi-card">
+                <span class="kpi-label">TOTAL PROFIT</span>
+                <span class="kpi-value">₹4,28,56,054</span>
+            </div>
+            <div class="kpi-card">
+                <span class="kpi-label">AVG ORDER VALUE</span>
+                <span class="kpi-value">₹1,45,012</span>
+            </div>
+            <div class="kpi-card">
+                <span class="kpi-label">UNITS SOLD</span>
+                <span class="kpi-value">8,170</span>
+            </div>
+            <div class="kpi-card">
+                <span class="kpi-label">PROFIT MARGIN</span>
+                <span class="kpi-value">29.5%</span>
+            </div>
+        </section>
+
+        <section class="charts-grid">
+            <div class="chart-container large">
+                <h3>Sales Trend Over Time</h3>
+                <canvas id="salesTrendChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Sales by Category</h3>
+                <canvas id="categoryChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Regional Performance</h3>
+                <canvas id="regionalChart"></canvas>
+            </div>
+            <div class="chart-container large">
+                <h3>Profitability Analysis</h3>
+                <canvas id="profitabilityChart"></canvas>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
